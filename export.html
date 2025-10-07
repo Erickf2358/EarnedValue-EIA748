@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exports and Reports</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #333;
+    }
+    .sidebar {
+      width: 220px;
+      background: #1f3c88;
+      color: #fff;
+      height: 100vh;
+      position: fixed;
+      padding-top: 20px;
+    }
+    .sidebar h2 {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .sidebar a {
+      display: block;
+      padding: 12px 20px;
+      color: #cbd5e0;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .sidebar a.active,
+    .sidebar a:hover {
+      background: #365fac;
+      color: #fff;
+    }
+    .content {
+      margin-left: 240px;
+      padding: 20px;
+    }
+    .header {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .subheader {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .section {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+    }
+    .section h3 {
+      margin-top: 0;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .report-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .report-card {
+      background: #f9fafb;
+      border: 1px solid #e2e8f0;
+      padding: 15px;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .report-card:hover {
+      background: #edf2f7;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>ControlPro</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Projects</a>
+    <a href="#">Control Accounts</a>
+    <a href="#">Work Packages</a>
+    <a href="#">Cost Upload</a>
+    <a href="#">Performance</a>
+    <a href="#" class="active">Exports and Reports</a>
+  </div>
+
+  <div class="content">
+    <div class="header">Exports and Reports</div>
+    <div class="subheader">You have been granted access to the following reports:</div>
+
+    <div class="section">
+      <h3>Structured Reports</h3>
+      <div class="report-grid">
+        <div class="report-card">01 - Control Account Structured Report</div>
+        <div class="report-card">02 - Period Update Structured Report</div>
+        <div class="report-card">03 - Project Cost Report</div>
+        <div class="report-card">04 - Project Cost Report Weekly</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Structured Reports (Gold Data)</h3>
+      <div class="report-grid">
+        <div class="report-card">01 - Control Account Structured Report</div>
+        <div class="report-card">03 - Project Cost Report</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Time Phased Reports</h3>
+      <div class="report-grid">
+        <div class="report-card">All Cost Data<
